@@ -1,0 +1,82 @@
+
+body{
+    background-image: linear-gradient(rgb(0, 170, 255),rgb(0, 255, 166));
+    width: 1000px;
+    height: 1200px;
+}
+#gameArea {
+    display: grid;
+    grid-template-columns: repeat(6, 30px);
+    grid-template-rows: repeat(6, 30px);
+    margin: 100px auto;
+    
+    gap: 150px;
+    color: maroon;
+    position: absolute;
+    left: 480px;
+    top: 10px;
+}
+#gameArea p {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+.button {
+    width: 130px;
+    height: 136px;
+    background-image: url("IMG/pad.png");
+}
+
+.button_value {
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+.button_value{
+    font-size: 100px;
+    color: black;
+}
+/* h1{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+} */
+#start{
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    width: 70px;
+    height: 50px;
+}
+#klein{
+    position: absolute;
+    top: 130px;
+    left: 20px;
+}
+
+#Rules{
+    position: relative;
+    font-size: 15px;
+}
+
+#start{
+    left: 70px;
+}
+
+#buttons{
+    border: 1px solid black;
+    background-image: linear-gradient(rgb(0, 170, 255),rgb(0, 255, 166));
+    width: 140px;
+    height: 130px;
+}

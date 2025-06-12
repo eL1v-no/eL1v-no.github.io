@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoger Lager spel</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="frontPage" class="page">
+        <h1>Hoger Lager spel</h1>
+        <button onclick="showPage('gamePage')">Start spel</button> <!-- Start spel knop -->
+        <button onclick="showPage('howToPlayPage')">Hoe speel je het?</button> <!-- Hoe te spelen knop -->
+        <button onclick="showPage('settingsPage')">Instelling</button> <!-- Instellingen knop -->
+    </div>
+    <div id="gamePage" class="page">
+        <h2>2 Spelers Hoger Lager</h2>
+        <div id="diceGame">
+            <div class="dice" id="dice1">1</div> <!-- Dobbelsteen 1 -->
+            <div class="dice" id="dice2">1</div> <!-- Dobbelsteen 2 -->
+        </div>
+        <div id="currentGuess">Is het volgende getal Hoger of Lager?</div> <!-- Huidige gok tekst -->
+        <div id="scoreBoard">
+            <h3>Credits</h3>
+            <p>Speler 1: <span id="player1Score">0</span></p> <!-- Score voor Speler 1 -->
+            <p>Speler 2: <span id="player2Score">0</span></p> <!-- Score voor Speler 2 -->
+        </div>
+        <button id="rollButton">Roll Dobbelsteen</button> <!-- Rol dobbelsteen knop -->
+        <button id="higherButton" class="hidden">Hoger</button> <!-- Hoger knop -->
+        <button id="lowerButton" class="hidden">Lager</button> <!-- Lager knop -->
+        <div id="result"></div> <!-- Resultaat weergave -->
+        <div id="winnerMessage"></div> <!-- Winnaar boodschap -->
+        <div id="finalWinner"></div> <!-- Finale winnaar boodschap -->
+        <button onclick="showPage('frontPage')">Terug naar menu</button> <!-- Terug naar menu knop -->
+    </div>
+    <div id="howToPlayPage" class="page">
+        <h2>Hoe speel je het?</h2>
+        <p>Speler 1 gooit de dobbelsteen en gaat gokken of het volgende getal hoger of lager is dan het huidige getal. Als je het goed hebt geraden, blijf je aan de beurt. Zodra de speler het fout heeft geraden, is de volgende speler aan de beurt. De speler met 10 punten wint! Succes!</p>
+        <button onclick="showPage('frontPage')">Terug naar menu</button> <!-- Terug naar menu knop -->
+    </div>
+    <div id="settingsPage" class="page">
+        <h2>Instellingen</h2>
+        <button onclick="showPage('frontPage')">Terug naar menu</button> <!-- Terug naar menu knop -->
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

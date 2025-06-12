@@ -1,0 +1,120 @@
+
+h1{
+    color: rgb(2, 37, 2);
+    left: 750px;
+    top: 5px;
+    position: absolute;
+    font-size: 100px;
+}
+
+body{
+    width: 1000px;
+    height: 800px;
+}
+
+#frog{
+    width: 189%;
+   height: 117%;
+}
+
+
+#one{
+    left: 250px;
+    top: 775px;
+    position: absolute;
+    color: blue;
+}
+
+#two{
+    left: 900px;
+    top: 775px;
+    position: absolute;
+    color: blue;
+}
+
+#three{
+    left: 1575px;
+    top: 775px;
+    position: absolute;
+    color: blue;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px; 
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    /* background-image: linear-gradient( rgb(92, 84, 185), rgb(13, 5, 76));
+    color: black; */
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    /* background-color: dodgerblue;
+    color: white; */
+    transform: rotateY(180deg);
+    
+  }
+
+.kaart1{
+    position: absolute;
+    left: 200px;
+    top: 500px;
+}
+.kaart2{
+    position: absolute;
+    left: 750px;
+    top: 500px;
+}
+.kaart3{
+    position: absolute;
+    left: 1300px;
+    top: 500px;
+}
+#one{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}
+
+#two{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    color: rgb(255, 0, 119)
+}
+
+#three{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}

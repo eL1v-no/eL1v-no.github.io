@@ -1,0 +1,55 @@
+body {
+    background-color: #f0f0f0; /* Achtergrondkleur van de pagina */
+    font-family: Arial, sans-serif; /* Lettertype van de pagina */
+    text-align: center; /* Tekst centreren */
+    margin: 0; /* Geen marge */
+    padding: 20px; /* Padding rondom de pagina */
+}
+h1, h2, button {
+    margin: 20px; /* Ruimte rond kopjes en knoppen */
+    color: #333; /* Kleur van de tekst */
+}
+.page {
+    display: none; /* Pagina's zijn standaard verborgen */
+}
+#frontPage {
+    display: block; /* Beginpagina is zichtbaar */
+}
+button {
+    background-color: #4CAF50; /* Kleur van de knoppen */
+    border: none; /* Geen rand */
+    padding: 10px 20px; /* Padding binnen de knoppen */
+    font-size: 16px; /* Lettergrootte */
+    cursor: pointer; /* Cursor verandert bij hover */
+    color: white; /* Kleur van de tekst op de knoppen */
+    margin: 5px; /* Ruimte tussen knoppen */
+}
+button:hover {
+    background-color: #45a049; /* Kleur van de knop bij hover */
+}
+#diceGame {
+    margin-top: 20px; /* Ruimte boven het dobbelspel */
+}
+.dice {
+    width: 60px; /* Breedte van de dobbelstenen */
+    height: 60px; /* Hoogte van de dobbelstenen */
+    margin: 20px; /* Ruimte rond de dobbelstenen */
+    background-color: #fff; /* Achtergrondkleur van dobbelstenen */
+    border: 2px solid #333; /* Rand van dobbelstenen */
+    display: inline-block; /* Dobbelstenen naast elkaar */
+    font-size: 30px; /* Lettergrootte van de dobbelstenen */
+    line-height: 60px; /* Verticaal centreren van de tekst in dobbelstenen */
+}
+#winnerMessage {
+    font-size: 20px; /* Grootte van de winnaar boodschap */
+    color: red; /* Kleur van de winnaar boodschap */
+    display: none; /* Standaard verborgen */
+}
+#finalWinner {
+    font-size: 24px; /* Grootte van de finale winnaar boodschap */
+    color: blue; /* Kleur van de finale winnaar boodschap */
+    display: none; /* Standaard verborgen */
+}
+#currentGuess {
+    margin-top: 10px; /* Ruimte boven de huidige gok tekst */
+}

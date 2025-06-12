@@ -1,0 +1,107 @@
+body {
+    font-family: 'Bloody', sans-serif;
+    text-align: center;
+    background-color: red;
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+    background-color: black;
+    border: 10px solid rgb(21, 20, 20);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    height: 80px;
+    width: 80px;
+
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+button {
+    font-size: 30px;
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-family: 'Bloody', sans-serif;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: red;
+    box-shadow: black, ;
+    cursor: pointer;
+    position: absolute; 
+    top: 50px; 
+    left: 50px; 
+}
+
+button:hover {
+    background-color: black; 
+    color: red; 
+
+}
+
+.red-piece {
+    background-color: red;
+
+}
+
+.yellow-piece {
+    background-color: yellow;
+}
+
+#reloadButton {
+    font-size: 30px;
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-family: 'Bloody', sans-serif;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: red;
+    cursor: pointer;
+    position: absolute; 
+    top: 50px; 
+    left: 50px;
+
+}
+
+#reloadButton:hover {
+    background-color: black; 
+    color: red; 
+}
+
+
+button {
+    font-size: 30px;
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-family: 'Bloody', sans-serif;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: red;
+    cursor: pointer;
+    position: absolute;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: red;
+}
+
+#reloadButton {
+    top: 120px; /* Verplaatst de knop lager */
+    left: 50px;
+}
+
+#backButton {
+    top: 50px; /* Houdt de knop bovenaan */
+    left: 50px;
+}

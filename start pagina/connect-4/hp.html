@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/hp.css">
+    <link href="https://fonts.cdnfonts.com/css/bloody" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Connect 4!</h1>
+        <div class="name">
+            <h2 id="myH2"></h2><br>
+            <h3 class="myH3" id="myH3">To start the game, select the game mode and fill in your names.</h3>
+            
+            <label class="select">Select how many players:</label><br>
+            <button id="1PlayerBtn" class="selectPlayerBtn">1 Player</button>
+            <button id="2PlayersBtn" class="selectPlayerBtn">2 Players</button><br><br>
+
+            <div id="fillInYourName">
+                <label id="player1Label" class="nameLabel">Enter Player 1 Name:</label>
+                <input type="text" id="player1Name" placeholder="Enter Player 1 name"><br><br>
+
+                <div id="player2Section">
+                    <label id="player2Label" class="nameLabel">Enter Player 2 Name:</label>
+                    <input type="text" id="player2Name" placeholder="Enter Player 2 name"><br><br>
+                </div>
+
+                <button id="submitNamesBtn">Submit</button><br><br>
+                <p id="error-message" class="error-message"></p>
+            </div>
+        </div>
+
+        <div class="btn-box">
+            <button class="start-game" id="start-game" onclick="window.location.href='game.html';" disabled>Start Game</button>
+            <button class="goBackToTheHomepage" onclick="goBackToTheHomepage()">Back to Homepage</button>
+
+
+        </div>
+    </div>
+    <script src="js/hp.js"></script>
+</body>
+</html>
