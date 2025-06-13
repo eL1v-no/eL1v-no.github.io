@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 0px #7e7d7dd5, 6px 6px 0px #d71d15;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+.home-card{
+    background-color: #222;
+    border: 5px solid #333;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+    height: 550px;
+    width: 450px;
+    align-items: center;
+}
+
+.home-card:hover {
+    border-color: #d71d15;
+}
+
+.home-title{
+    text-decoration: none !important;
+    outline: none !important;
+    color: #f2f2f2;
+    font-size: 2rem;
+    text-align: center;
+
+}
+.home-title img{
+    height: 460px;
+    width: 350px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none ;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 20px 0;
+}
+
+/*navigatie*/
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #333;
+    border: 5px solid gray;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: #f2f2f2;
+    padding: 5px 10px;
+}
+
+.nav-bar a:hover {
+    color: #d71d15;
+}
+
+/*&copy balk*/
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border: 5px solid gray;
+}
+
+/*card aanpassen*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    border: 5px solid #333;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.card img {
+    width: 150px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.card:hover {
+    border-color: #d71d15;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card-title {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+/*over ons*/
+.overons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.overons {
+    height: 550px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    border: 5px solid #333;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.overons img {
+    width: 175px;
+    height: 225px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.overons-header {
+    font-size: large;
+    font-weight: bold;
+    color: #f2f2f2;
+    padding: 5px 10px;
+}
+
+/*Contact pagina*/
+.contact-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    border: 5px solid #333;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.help-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    border: 5px solid #333;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d71d15;
+    border-radius: 5px;
+}
+
+/* Knop styling binnen het formulier */
+.form-group button{
+    background-color: #d71d15;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.form-group button:hover {
+    background-color: white;
+    color: #d71d15;
+}
+
+/* Product Detail */
+.back-button-container {
+    margin-top: 20px;
+    text-align: center;
+    top: 10px;
+    right: 10px;
+}
+.back-button {
+    display: inline-block;
+    background-color: #d71d15;
+    color: white;
+    padding: 5px 10px;
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    border-radius: 8px;
+    position: fixed !important;
+    top: 20px !important;
+    left: 20px !important;
+    font-size: 20px;
+    border: none;
+}
+
+.back-button:hover {
+    background-color: #f2f2f2;
+    color: #d71d15;
+}
+.product-container{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+.product-container img{
+    height: 350px;
+    width: auto;
+}
+.product-detail-container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+    color: white;
+}
+
+.product-card {
+    background-color: #222;
+    border: 5px solid #333;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.product-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #d71d15;
+    text-align: center;
+}
+
+.product-image-wrapper {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.product-image {
+    max-width: 30%;
+    height: auto;
+    border: 3px solid #d71d15;
+    border-radius: 5px;
+}
+
+.product-meta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.meta-label {
+    color: #d71d15;
+    font-weight: bold;
+}
+
+.product-description {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.product-description h3 {
+    color: #d71d15;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.review-section {
+    background-color: #222;
+    padding: 25px;
+    border: 5px solid #333;
+    border-radius: 8px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-comment{
+    border: 3px solid #d71d15;
+    margin: 20px auto;
+    background-color: #222;
+    padding: 16px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 90%;
+}
+
+.review-comment p {
+    margin-top: 12px;
+    color: #dddddd;
+    font-size: 1em;
+}
+
+.review-time {
+    text-align: right;
+    color: #aaa;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+.section-title {
+    color: #d71d15;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*dorpdown balk style*/
+details {
+    margin: 1em 0;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color:  #d71d15;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+summary::-webkit-details-marker {
+    display: none; /* verberg standaard driehoekje */
+}
+
+summary::before {
+    content: "▶ ";
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+    .container {
+        gap: 30px;
+        padding: 20px 10px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-image {
+        max-width: 80%;
+    }
+
+    .product-meta {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .product-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .review-comment {
+        padding: 24px;
+        font-size: 1.1em;
+    }
+
+    .review-comment strong {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-comment {
+        padding: 12px;
+        font-size: 0.95em;
+    }
+}
+/* LOGIN & REGISTER STYLES  */
+.auth-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.auth-section {
+    background-color: #222;
+    border: 5px solid #333;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    border: 2px solid #555;
+    border-radius: 5px;
+    color: white;
+}
+
+/* PROFILE PAGE STYLES */
+.profile-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.profile-section {
+    background-color: #222;
+    border: 5px solid #333;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.delete-button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
